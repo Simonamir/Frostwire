@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrostWire - Trucchi e Consigli per Linux</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/respnav.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/gallery.js"></script>
+</head>
+<body>
+    <div class="nav" id="respnav">
+        <a href="index.html">FrostWire</a>
+        <a href="aboutus.html" class="center">Chi Siamo?</a>
+        <a href="contactus.html" class="center">Contattaci</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <div class="box-info">
+        <h2>Trucchi e Consigli per Linux</h2>
+        <p>
+            Quando utilizzi GNU/Linux, una delle risorse più potenti a tua disposizione è il terminale.<br> 
+            Impara alcuni comandi di base come ls, cd e cp per navigare tra le directory, copiare file e gestire i processi.<br> 
+            Ma non fermarti qui! Esplora comandi più avanzati come grep, find e awk per effettuare ricerche avanzate e manipolare i dati.<br> 
+            Il terminale ti offre una flessibilità e un controllo incredibili sul tuo sistema.<br>
+            Una delle grandi gioie di GNU/Linux è la possibilità di personalizzare il tuo ambiente desktop. Scegli tra una varietà di ambienti desktop come GNOME, KDE, Xfce e altri. Dai libero sfogo alla tua creatività personalizzando temi, sfondi, layout dei pannelli e scorciatoie da tastiera. Puoi anche utilizzare estensioni e plugin per adattare l'ambiente alle tue esigenze e renderlo unico.<br>
+            Sfrutta il gestore di pacchetti del tuo sistema, come apt, dnf o pacman. Questi strumenti semplificano l'installazione, l'aggiornamento e la rimozione del software. Impara a utilizzare i repository ufficiali e scopri il vasto ecosistema di software open-source disponibile per GNU/Linux. Dalle alternative alle suite office agli editor di testo avanzati e agli strumenti di sviluppo, c'è qualcosa per ogni esigenza.<br>
+            Mentre esplori GNU/Linux, approfitta degli strumenti di scripting come Bash, Python e Perl. Impara a scrivere script per automatizzare compiti ripetitivi, creare applicazioni personalizzate e gestire i flussi di lavoro. Lo scripting ti permette di risparmiare tempo ed energia, migliorando la tua produttività e adattando GNU/Linux alle tue esigenze specifiche.<br>
+            Non dimenticare di unirti alla comunità GNU/Linux. Partecipa a forum di discussione, chiedi aiuto, condividi le tue esperienze e impara dagli altri utenti. Sfrutta le risorse online come guide, tutorial e documentazione per approfondire le tue conoscenze. Partecipa a conferenze e eventi locali per incontrare appassionati di GNU/Linux, scoprire nuove tecnologie e creare connessioni significative.<br>
+            GNU/Linux è un sistema operativo incredibilmente flessibile e personalizzabile. Sperimenta, esplora e divertiti nel trovare nuovi trucchi e consigli che si adattino alle tue esigenze. Approfondire la tua conoscenza di GNU/Linux ti permetterà di ottenere il massimo dal tuo sistema e godere di una piattaforma aperta, potente e collaborativa.
+        </p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Spiegazione Comandi Base per il terminale</h2>
+            <p> "ls": Il comando "ls" (list) viene utilizzato per elencare i file e le directory presenti nella directory corrente. Digitando "ls" nel terminale, otterrai un elenco dei nomi dei file e delle cartelle nella posizione in cui ti trovi.<br><br>
+
+                "cd": Il comando "cd" (change directory) permette di spostarti tra le diverse directory del sistema. Ad esempio, digitando "cd /home" nel terminale, ti sposterai nella directory "home" del tuo sistema. Puoi utilizzare "cd .." per tornare alla directory precedente.<br><br>
+            
+                "pwd": Il comando "pwd" (print working directory) restituisce il percorso completo della directory in cui ti trovi attualmente. Digitando "pwd" nel terminale, visualizzerai il percorso completo della directory corrente.<br><br>
+            
+                "cp": Il comando "cp" (copy) viene utilizzato per copiare file o directory da una posizione all'altra. Ad esempio, "cp file1.txt /home/user" copierà il file "file1.txt" nella directory "/home/user".<br><br>
+            
+                "mv": Il comando "mv" (move) permette di spostare o rinominare file e directory. Ad esempio, "mv file1.txt /home/user" sposterà il file "file1.txt" nella directory "/home/user". Se desideri rinominare il file, puoi utilizzare "mv file1.txt file2.txt" per cambiarne il nome.<br><br>
+            
+                "rm": Il comando "rm" (remove) viene utilizzato per eliminare file e directory. Tuttavia, devi prestare attenzione perché è un comando permanente e i file eliminati non possono essere recuperati facilmente. Ad esempio, "rm file1.txt" eliminerà il file "file1.txt" dalla directory corrente.<br><br>
+            
+                "mkdir": Il comando "mkdir" (make directory) viene utilizzato per creare una nuova directory. Ad esempio, "mkdir nuova_cartella" creerà una nuova directory di nome "nuova_cartella" nella directory corrente.
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Spiegazione Comandi Semi-avanzati per il terminale</h2>
+            <p> "grep": Il comando "grep" viene utilizzato per cercare un testo specifico all'interno di uno o più file. Ad esempio, "grep "parola" file.txt" restituirà tutte le linee nel file "file.txt" che contengono la parola "parola". Puoi anche utilizzare le opzioni di grep per raffinare la ricerca, come la ricerca case-insensitive o la visualizzazione del numero di riga in cui viene trovata la corrispondenza.<br><br>
+
+                "find": Il comando "find" viene utilizzato per cercare file e directory in base a diversi criteri come il nome, la dimensione, il tipo e altro ancora. Ad esempio, "find /home -name "*.txt"" cercherà tutti i file con estensione ".txt" nella directory "/home" e nelle sue sottodirectory. Puoi combinare diverse opzioni con "find" per ottenere risultati più specifici.<br><br>
+            
+                "chmod": Il comando "chmod" (change mode) viene utilizzato per modificare i permessi dei file e delle directory. I permessi determinano quale tipo di accesso è consentito ai file o alle directory. Ad esempio, "chmod +x script.sh" concederà il permesso di esecuzione al file "script.sh". Puoi utilizzare simboli come "+", "-" e "=" insieme a lettere come "r", "w" e "x" per specificare i permessi desiderati.<br><br>
+            
+                "tar": Il comando "tar" viene utilizzato per creare, visualizzare e manipolare file archivio. Ad esempio, "tar -cvf archivio.tar file1 file2" creerà un archivio chiamato "archivio.tar" contenente i file "file1" e "file2". Puoi anche utilizzare opzioni come "x" per estrarre i file dall'archivio, "t" per visualizzare il contenuto dell'archivio e "z" per comprimere l'archivio con gzip.<br><br>
+            
+                "ssh": Il comando "ssh" (Secure Shell) consente di connettersi a un altro computer in modo sicuro e remoto. Ad esempio, "ssh utente@indirizzoIP" ti consentirà di accedere a un computer remoto tramite una connessione crittografata. Puoi anche utilizzare opzioni come "-p" per specificare una porta diversa e "-i" per specificare una chiave privata per l'autenticazione.
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Personalizzare il proprio Sistema o Desktop Environment</h2>
+            <p> GNOME offre un'interfaccia moderna e intuitiva che puoi personalizzare secondo le tue preferenze. Puoi cambiare i temi, le icone e i cursori attraverso le impostazioni di GNOME o utilizzando temi personalizzati scaricati da fonti esterne come GNOME-Look.org. Puoi anche utilizzare estensioni per estendere le funzionalità di GNOME, come aggiungere pannelli aggiuntivi, barre di stato e widget.<br>
+                Alcuni software popolari che puoi utilizzare su GNOME includono il browser web Firefox, il lettore multimediale VLC e l'applicazione di posta elettronica Thunderbird.<br><br>
+
+                KDE offre un'esperienza desktop altamente personalizzabile. Puoi modificare il tema, gli stili, le icone e i cursori attraverso le impostazioni di KDE o utilizzando temi personalizzati scaricati da fonti come KDE Store. Puoi anche utilizzare widget per aggiungere funzionalità extra al tuo desktop e personalizzare la disposizione dei pannelli.<br>
+                Alcuni software popolari che puoi utilizzare su KDE Plasma includono il browser web Chromium, il lettore multimediale Amarok e l'applicazione di posta elettronica KMail.<br><br>
+            
+                Xfce è un ambiente desktop leggero e veloce con opzioni di personalizzazione. Puoi cambiare il tema, le icone e lo sfondo del desktop utilizzando le impostazioni di Xfce o utilizzando temi personalizzati scaricati da fonti esterne. Puoi anche configurare scorciatoie da tastiera personalizzate, aggiungere applet al pannello e regolare le impostazioni di risparmio energetico.<br>
+                Alcuni software popolari che puoi utilizzare su Xfce includono il browser web Chrome, il lettore multimediale Rhythmbox e l'applicazione di posta elettronica Geary.<br><br>
+            
+                Oltre a GNOME, KDE e Xfce, ci sono molti altri ambienti desktop disponibili per GNU/Linux, come Cinnamon, LXDE, MATE e altri.<br>
+                Ognuno di questi ambienti desktop ha le proprie opzioni di personalizzazione e software consigliati. Puoi esplorare e sperimentare con i vari ambienti desktop e software disponibili per trovare quello che meglio si adatta alle tue preferenze e alle tue esigenze specifiche.
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Forum dove Iscriversi per conoscere meglio questo mondo</h2>
+            <p> 
+                Ci sono diversi forum dedicati a GNU/Linux dove puoi iscriverti per partecipare alle discussioni e ottenere supporto dalla comunità. Ecco alcuni forum popolari:<br><br>
+
+                <a href="https://www.linuxquestions.org/">LinuxQuestions</a> Questo forum è uno dei più grandi e attivi per gli utenti di GNU/Linux. Offre una vasta gamma di sezioni e discussioni su vari argomenti relativi a Linux, distribuzioni, problemi tecnici, software e molto altro.<br><br>
+
+                <a href="https://ubuntuforums.org/">Ubuntu Forum</a> Questo forum è specificamente dedicato agli utenti di Ubuntu, una delle distribuzioni Linux più popolari. Qui puoi trovare discussioni su argomenti specifici legati ad Ubuntu, oltre a sezioni generali di supporto e discussioni tecniche.<br><br>
+
+                <a href="https://bbs.archlinux.org/">Arch Linux Forum</a> Questo forum è dedicato agli utenti di Arch Linux, una distribuzione nota per la sua flessibilità e personalizzazione. Qui puoi trovare discussioni approfondite sull'utilizzo di Arch Linux, problemi tecnici e suggerimenti per l'ottimizzazione del sistema.<br><br>
+
+                <a href="https://forums.linuxmint.com/">Linux Mint Forum</a> Questo forum è dedicato agli utenti di Linux Mint, una distribuzione basata su Ubuntu. Qui puoi trovare discussioni su Linux Mint, personalizzazione, software consigliati e molto altro.<br><br>
+
+                <a href="https://www.linux.org/forums/">Linux.org Forum</a> Questo forum è un punto di incontro per gli utenti di GNU/Linux in generale. Offre sezioni di discussione su varie distribuzioni, consigli, trucchi e problemi tecnici.
+            </p>
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>La distro che consiglio per chi vuole iniziare</h2>
+            <p> 
+                Una distribuzione di GNU/Linux molto adatta per i principianti, è Linux Mint.<br><br>
+                Linux Mint è una distribuzione basata su Ubuntu, ma con una serie di caratteristiche che la rendono particolarmente adatta ai nuovi utenti di GNU/Linux. Innanzitutto, ha un'interfaccia utente intuitiva e familiare, simile a quella di Windows, che facilita la transizione per chi proviene da un sistema operativo Windows. Il desktop predefinito di Linux Mint è chiamato Cinnamon ed è noto per la sua facilità d'uso e la sua semplicità.<br>
+                Inoltre, Linux Mint mette molta enfasi sulla facilità di installazione e configurazione. Il suo installer offre una procedura guidata chiara e intuitiva che rende l'installazione del sistema operativo un'esperienza senza intoppi. Inoltre, Linux Mint include una serie di applicazioni preinstallate che coprono le esigenze di base degli utenti, come un browser web, un lettore multimediale, un'applicazione di posta elettronica e un gestore di file.<br>
+                Una caratteristica distintiva di Linux Mint è la sua attenzione alla stabilità e all'affidabilità del sistema. La distribuzione fa un'attenta selezione dei pacchetti software, garantendo che le versioni utilizzate siano ben testate e affidabili. Ciò contribuisce a ridurre la probabilità di problemi o instabilità durante l'utilizzo quotidiano del sistema.
+                Oltre alla versione Cinnamon, Linux Mint offre anche varianti con altri ambienti desktop come MATE e Xfce, che sono più leggeri in termini di risorse di sistema e possono essere adatti a hardware più datato o meno potente.<br>
+                Infine, Linux Mint ha una comunità attiva e disponibile, con un forum dedicato e una vasta documentazione disponibile online. Ciò significa che puoi trovare facilmente supporto e risposte alle tue domande mentre ti avventuri nel mondo di GNU/Linux.<br>
+                In conclusione, Linux Mint è una scelta eccellente per i principianti che cercano un'esperienza GNU/Linux semplice e intuitiva. La sua interfaccia utente familiare, l'installazione agevole, la stabilità del sistema e la comunità di supporto attiva lo rendono un'opzione molto raccomandata per coloro che desiderano iniziare con GNU/Linux in modo semplice ed efficace.
+            </p>
+          </div>
+    </div>
+    <div class="header2">
+        <div class="gold-line"></div>
+        <h1>Galleria Immagini</h1>
+    </div>
+    <div class="gallery">
+        <div>
+          <img src="img/linux/cons/linuxmint.png" alt="Immagine 1">
+          <div class="caption">Linux Mint - adatta a chiunque voglia buttarsi in questo mondo</div>
+        </div>
+        <div>
+          <img src="img/linux/cons/xubuntu.png" alt="Immagine 2">
+          <div class="caption">Xubuntu leggera e veloce basata su Ubuntu - Funziona su qualunque computer</div>
+        </div>
+        <div>
+          <img src="img/linux/cons/fedora.png" alt="Immagine 2">
+          <div class="caption">Fedora per chi vuole un sistema stabile ma sempre aggiornato</div>
+        </div>
+        <div>
+          <img src="img/linux/cons/debian.png" alt="Immagine 2">
+          <div class="caption">Debian per chi vuole un sistema stabile e sicuro, senza badare alle novità</div>
+        </div>
+        <div>
+          <img src="img/linux/cons/arch-linux.png" alt="Immagine 2">
+          <div class="caption">Arch Linux per chi vuole buttarsi su un'ambiente più da "smanettoni" senza troppe pretese</div>
+        </div>
+        <div>
+          <img src="img/linux/cons/gentoo.png" alt="Immagine 2">
+          <div class="caption">Gentoo per chi ama creare e modificare tutto partendo da zero</div>
+        </div>
+    </div>
+        <footer>
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">FrostWire</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-line"></div>
+            <div class="footer-text">
+                <p>Sei un appassionato d’informatica?</p>
+                <p>Ti piacerebbe collaborare con noi?</p>
+                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
+                <p>e se saremo interessati ti contatteremo!</p>
+                
+                <div class="footer-links">
+                    <ul>
+                      <p>About</p>  
+                      <li><a href="aboutus.html">Chi Siamo?</a></li>
+                    </ul>
+                    <ul>
+                      <p>Help</p>  
+                      <li><a href="domande.html">Domande Frequenti</a></li>
+                      <li><a href="contactus.html">Contattaci</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://it-it.facebook.com/" class="social-icon"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  </div>   
+            </div>
+        </footer>       
+    
+</body>
+</html>

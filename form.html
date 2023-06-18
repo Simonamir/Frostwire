@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frost Wire - Document</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/respnav.js"></script>
+    <script src="js/godownform.js"></script>
+</head>
+<body>
+    <div class="nav" id="respnav">
+        <a href="index.html">FrostWire</a>
+        <a href="aboutus.html" class="center">Chi Siamo?</a>
+        <a href="contactus.html" class="center">Contattaci</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <div class="header">
+        <div class="gold-line"></div>
+        <h1>Vuoi dare una mano al continuo di questo sito?</h1>
+    </div>
+    <div class="welcome">
+        <h1>Sei un appassionato d’informatica?<br>Ti piacerebbe collaborare con noi?<br>Compila il form cliccando qui<br>e se saremo interessati ti contatteremo!<br></h1>
+        <div class="go-down" onclick="scrollToContent()">
+            <h1>Vai giù &darr;</h1>
+        </div>
+    </div>
+    <div class="containerform">
+        <form action="action_page.php">
+      
+          <label for="fname">Nome</label>
+          <input type="text" id="fname" name="firstname" placeholder="Inserisci il tuo nome...">
+
+          <label for="lname">Cognome</label>
+          <input type="text" id="lname" name="lastname" placeholder="Inserisci il tuo cognome...">
+          
+          <label for="mail">E-Mail</label>
+          <input type="text" id="mail" name="email" placeholder="Inserisci la tua mail...">
+           
+          <label for="subject">Dimmi di te</label>
+          <textarea id="subject" name="subject" placeholder="Scrivi qualcosa su di te..." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div> 
+      <footer>
+        <div class="footer-content">
+            <a href="index.html" class="footer-logo">FrostWire</a>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-line"></div>
+        <div class="footer-text">
+            <p>Sei un appassionato d’informatica?</p>
+            <p>Ti piacerebbe collaborare con noi?</p>
+            <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
+            <p>e se saremo interessati ti contatteremo!</p>
+            
+            <div class="footer-links">
+                <ul>
+                  <p>About</p>  
+                  <li><a href="aboutus.html">Chi Siamo?</a></li>
+                </ul>
+                <ul>
+                  <p>Help</p>  
+                  <li><a href="domande.html">Domande Frequenti</a></li>
+                  <li><a href="contactus.html">Contattaci</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://it-it.facebook.com/" class="social-icon"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="social-icon"><i class="fa fa-instagram"></i></a>
+              </div>   
+        </div>
+    </footer>
+</body>
+</html>

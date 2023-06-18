@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrostWire - Trucchi e Consigli per Windows</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/respnav.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script src="js/gallery.js"></script>
+</head>
+<body>
+    <div class="nav" id="respnav">
+        <a href="index.html">FrostWire</a>
+        <a href="windows.html">&larr;</a>
+        <a href="aboutus.html" class="center">Chi Siamo?</a>
+        <a href="contactus.html" class="center">Contattaci</a>
+        <a href="javascript:void(0);" class="icon" onclick="respnav()">
+            <i class="fa fa-bars"></i>
+          </a>
+      </div>
+      <div class="box-info">
+        <h2>Trucchi e Consigli per Windows</h2>
+        <p>
+            Ci sono tanti trucchi Windows 10 che ti consentono di spremere al meglio l'ultima versione del sistema operativo di Microsoft.  <br> 
+            Alcuni li puoi usare nella vita di tutti i giorni per migliorare e velocizzare la quotidianità, mentre altri torneranno assai utili in ambiti specifici ed è quindi più che consigliabile impararli subito.<br> 
+            Abbiamo raccolto venti trucchi per Windows 10 facili facili, adatti per tutti: da chi è più informatico a chi usa il computer solo per giocare al Solitario.<br> 
+            Il terminale ti offre una flessibilità e un controllo incredibili sul tuo sistema.<br>
+            Ci sono tantissimi suggerimenti, trucchi, consigli e feature seminascoste che permettono di raggiungere un obiettivo preciso: quello di aumentare la vostra efficienza quando lavorate col pc (portatile o meno).<br>
+            La prima versione pubblica di Windows 10 è stata rilasciata e pubblicata da Microsoft a fine luglio 2015. A distanza di sei anni ad oggi sono stati rilasciati ben 11 feature update, pacchetti di aggiornamento che in molti casi hanno via a via esteso le caratteristiche offerte dalle varie edizioni del sistema operativo.<br>
+            I trucchi e segreti presentati nel seguito rappresentano solo una parte di tutti quelli di cui abbiamo parlato in passato e di alcuni – “inediti” – che stiamo pubblicando.
+            Ecco perché la nostra “carrellata” va considerata parziale<br>
+            Non dimenticare di unirti alla comunità Windows. Partecipa a forum di discussione, chiedi aiuto, condividi le tue esperienze e impara dagli altri utenti.<br>
+            Windows è un sistema operativo incredibilmente  personalizzabile. Sperimenta, esplora e divertiti nel trovare nuovi trucchi e consigli che si adattino alle tue esigenze. 
+        </p>
+    </div>
+    <div class="container">
+        <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Spiegazione Comandi Base per il terminale</h2>
+            <p> Per aprire una nuova istanza di Terminale Windows dalla riga di comando, puoi usare wt.exe. In alternativa, puoi anche usare l'alias di esecuzione wt.                <br><br>
+
+                La riga di comando wt accetta due tipi di valori, ovvero opzioni e comandi. Le opzioni sono un elenco di flag e di altri parametri che controllano il comportamento della riga di comando wt nel complesso. I comandi forniscono l'azione, o l'elenco di azioni delimitate da punti e virgola, che è necessario implementare. Se non specifichi un comando, per impostazione predefinita viene usato new-tab.<br><br>
+            
+                <br><br>
+            
+                --help, -h, -?, /?	Visualizza il messaggio della Guida.<br><br>
+            
+                --maximized, -M	Avvia il terminale ingrandito.<br><br>
+            
+                --fullscreen, -F	Avvia il terminale a schermo intero.<br><br>
+
+                --window, -w window-id	Esegue il comando specificato in una finestra specifica. <br><br>
+            
+                --focus, -f	Avvia il terminale nella modalità messa a fuoco. Può essere combinato con maximized.
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Spiegazione Comandi Semi-avanzati per il terminale</h2>
+            <p> È possibile richiamare la tavolozza dei comandi digitando CTRL+MAIUSC+P. Questa operazione può essere personalizzata aggiungendo il commandPalette comando alle associazioni di chiavi.<br><br>
+
+                I comandi iterabili consentono di creare più comandi contemporaneamente, generati da altri oggetti definiti nelle impostazioni. Attualmente è possibile creare comandi iterabili per i profili e le combinazioni di colori. In fase di esecuzione, questi comandi verranno espansi in un comando per ognuno degli oggetti del tipo specificato.
+
+                È attualmente possibile eseguire l'iterazione delle proprietà seguenti:
+                profiles	name	"name": "{profile.name}"
+                profiles	icon	"icon": "{profile.icon}"
+                schemes	name	"name": "{scheme.name}"<br><br>
+            
+                I comandi annidati consentono di raggruppare più comandi in un elemento nel riquadro comandi. L'esempio seguente raggruppa i comandi di ridimensionamento del tipo di carattere in un elemento del riquadro comandi denominato "Modifica dimensione del carattere...". {
+                    "name": "Change font size...",
+                    "commands": [
+                        { "command": { "action": "adjustFontSize", "delta": 1 } },
+                        { "command": { "action": "adjustFontSize", "delta": -1 } },
+                        { "command": "resetFontSize" },
+                    ]
+                }<br><br>
+            
+               Facoltativamente, è possibile aggiungere un'icona a un comando definito in settings.json visualizzato nel riquadro comandi. Questa operazione può essere eseguita aggiungendo la icon proprietà all'azione. Le icone possono essere un percorso di un'immagine, un simbolo di Asset Segoe MDL2 o qualsiasi carattere, inclusi gli emoji.{ "icon": "C:\\Images\\my-icon.png", "name": "New tab", "command": "newTab", "keys": "ctrl+shift+t" },
+               { "icon": "\uE756", "name": "New tab", "command": "newTab", "keys": "ctrl+shift+t" },
+               { "icon": "⚡", "name": "New tab", "command": "newTab", "keys": "ctrl+shift+t" }<br><br>
+            
+                È possibile aggiungere un'associazione di chiavi personalizzata per richiamare direttamente la tavolozza dei comandi nella modalità della riga di comando. { "command": "commandPalette", "launchMode": "commandLine", "keys": "" }
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Personalizzare il proprio Sistema</h2>
+            <p> Quando Apple ha lanciato il suo nuovo macOS Big Sur molti utenti di Windows hanno rimarcato il fatto di come l’implementazione del cosiddetto Fluent design non sia stata ancora completamente applicata a livello di sistema operativo.<br>
+                In attesa del rinnovamento dell’interfaccia di Windows 10 del quale si è più volte parlato (è atteso con il rilascio della versione 21H2 del prossimo autunno: Microsoft rinnoverà l’interfaccia del sistema operativo con Windows 10 21H2) facciamo il punto sulle principali possibilità di personalizzazione che offre Windows 10 e che possono essere applicate sia utilizzando gli strumenti di sistema che risorse di terze parti.<br><br>
+
+                Il menu Start di Windows 10 offre già oggi ampie possibilità di personalizzazione anche se in futuro subirà ancora nuove modifiche: Le piastrelle del menu Start di Windows 10 non moriranno: saranno diverse.<br>
+                Con una semplice modifica a livello di registro è possibile attivare la cosiddetta “ricerca immersiva” che si ispira all’impostazione di Spotlight su macOS con la finestra di ricerca che viene visualizzata al centro dello schermo.<br><br>
+            
+                Dal punto di vista grafico, l’elemento di spicco dell’interfaccia di un sistema operativo è sicuramente il desktop, che può essere personalizzato praticamente in tutti i suoi aspetti, dallo sfondo alle icone, intervenendo manualmente o utilizzando dei temi “preconfezionati”.
+
+                <br>
+                Sul desktop mancano alcune icone di sistema che ritieni utili, come la cartella utente o la cartella Rete, e vorresti aggiungerle o, al contrario, intendi liberarti definitivamente di quelle già presenti (ad es. Questo PC)? Puoi effettuare quest’operazione in modo semplicissimo: anche in questo caso, devi fare clic destro in un punto vuoto del desktop, scegliere la voce Personalizza dal menu che compare e selezionare, nella schermata successiva, la voce Temi<br><br>
+            
+                L’aspetto delle cartelle in Windows 10 non ti piace? Anche in questo caso, puoi personalizzarlo in modo estremamente semplice: per prima cosa, avvia Esplora File (l’icona a forma di cartella gialla collocata nella barra delle applicazioni, in fondo allo schermo) e, tramite essa, spostati nel percorso in cui risiede la cartella che vuoi personalizzare.<br>
+          </div>
+          <div class="box">
+            <div class="so-gold-line"></div>
+            <h2>Forum dove Iscriversi per conoscere meglio questo mondo</h2>
+            <p> 
+                Ci sono diversi forum dedicati a Windows dove puoi iscriverti per partecipare alle discussioni e ottenere supporto dalla comunità. Ecco alcuni forum popolari:<br><br>
+
+                <a href="https://answers.microsoft.com/it-it">MicrosoftQuestions</a> Questo forum è uno dei più grandi e attivi per gli utenti di Microsoft. Offre una vasta gamma di sezioni e discussioni super attuali.<br><br>
+ 
+                <a href="https://www.tenforums.com/">TenForum</a> Questo forum è specificamente dedicato agli utenti di Windows10, una delle distribuzioni più popolari. <br><br>
+
+                <a href="https://forums.windowscentral.com/">Central Forum</a> Questo forum è dedicato agli utenti di Windows, una distribuzione nota per la sua flessibilità e personalizzazione. Qui puoi trovare discussioni su problemi tecnici e suggerimenti per l'ottimizzazione del sistema.<br><br>
+
+                <a href="https://community.dynamics.com/">Dynamic365</a> Questo forum è dedicato agli utenti di windows 365.Personalizza rapidamente la tua community per trovare i contenuti che cerchi.<br><br>
+            </p>
+          </div>
+          
+    </div>
+    <div class="header2">
+        <div class="gold-line"></div>
+        <h1>Galleria Immagini</h1>
+    </div>
+    <div class="gallery">
+        <div>
+          <img src="img/windows/prodotti windows 265.png" alt="Immagine 1">
+          <div class="caption">Windows 365</div>
+        </div>
+        <div>
+          <img src="img/windows/windows365.png" alt="Immagine 2">
+          <div class="caption">Dynamic 365</div>
+        </div>
+        <div>
+          <img src="img/windows/comunitwindoes.png" alt="Immagine 2">
+          <div class="caption">Comunity Windows</div>
+        </div>
+        <div>
+          <img src="img/windows/forum cdentrale.png" alt="Immagine 2">
+          <div class="caption">Forum centrale novità e dubbi Windows</div>
+        </div>
+        <div>
+            <img src="img/windows/Schermata 2023-06-05 alle 02.56.04.png" alt="Immagine 2">
+            <div class="caption">Community del supporto Microsoft</div>
+          </div>
+        
+    </div>
+        <footer>
+            <div class="footer-content">
+                <a href="index.html" class="footer-logo">FrostWire</a>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-line"></div>
+            <div class="footer-text">
+                <p>Sei un appassionato d’informatica?</p>
+                <p>Ti piacerebbe collaborare con noi?</p>
+                <p>Compila il form cliccando <a href="form.html" class="footer-form">qui</a></p>
+                <p>e se saremo interessati ti contatteremo!</p>
+                
+                <div class="footer-links">
+                    <ul>
+                      <p>About</p>  
+                      <li><a href="aboutus.html">Chi Siamo?</a></li>
+                    </ul>
+                    <ul>
+                      <p>Help</p>  
+                      <li><a href="domande.html">Domande Frequenti</a></li>
+                      <li><a href="contactus.html">Contattaci</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="https://it-it.facebook.com/" class="social-icon"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" class="social-icon"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" class="social-icon"><i class="fa fa-instagram"></i></a>
+                  </div>   
+            </div>
+        </footer>       
+    
+</body>
+</html>
